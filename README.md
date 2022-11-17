@@ -34,6 +34,4 @@ Deployment:Monitors a set of pods, and restar them if they crash
 Service: provide an easy to remember URL to access a running container
 
 
-```
 [Kubernet On](https://stackoverflow.com/questions/50490808/unable-to-connect-to-the-server-dial-tcp-18080-connectex-no-connection-c)
-```
