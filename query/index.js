@@ -19,7 +19,7 @@ app.get("/posts", async (req, res) => {
   return res.send(posts);
 });
 
-app.post("/posts", async (req, res) => {
+app.post("/events", async (req, res) => {
   //SAVE DATA
   const { type, data } = req.body;
   if (type === "PostCreated") {
@@ -31,6 +31,7 @@ app.post("/posts", async (req, res) => {
     const post = posts[postId];
     post.comments.push({ id, content });
   }
+  console.log(posts);
   return res.send({});
 });
 
