@@ -28,6 +28,7 @@ into the project <post>
       image: microservice/posts:0.0.1
 °°°°THEN
 kubectl apply -f posts.yaml
+kubectl get pods
 ```
 
 Structure:
