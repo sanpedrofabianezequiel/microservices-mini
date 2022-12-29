@@ -29,6 +29,16 @@ into the project <post>
 °°°°THEN
 kubectl apply -f posts.yaml
 kubectl get pods
+kubectl logs id
+kubectl get deployment ||| kubectl delete deployment <NAME>
+kuebectl get pods      ||| kuebectl delte pod <NAME>
+kubectl get services
+kubectl rollout restart deployment posts-depl
+```
+
+### Run Into the root
+```
+ skaffold dev  
 ```
 
 Structure:
@@ -41,3 +51,5 @@ Structure:
 
 
 [Kubernet On](https://stackoverflow.com/questions/50490808/unable-to-connect-to-the-server-dial-tcp-18080-connectex-no-connection-c)
+
+- kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml
